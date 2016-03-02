@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Label1: UILabel!
     @IBAction func tounch(sender: UIButton) {
-        
+        Label1.text=("123")
     }
     override func viewDidLoad() {
         super.viewDidLoad()

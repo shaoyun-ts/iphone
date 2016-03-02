@@ -1,0 +1,8 @@
+
+*.pbxproj
+
+iphone.xcodeproj/xcuserdata/shaoyun.xcuserdatad/xcschemes/iphone.xcscheme
+
+iphone.xcodeproj/project.pbxproj
+
+iphone/Info.plist
