@@ -11,10 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var Label1: UILabel!
-    @IBAction func tounch(sender: UIButton) {
-        Label1.text=("123")
+    @IBAction func BT1(sender: AnyObject) {
+        Label1.text = ("我爱 Swift !")
     }
-    override func viewDidLoad() {
+  
+        override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
