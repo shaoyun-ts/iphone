@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,14 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Swift!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mq-6D-2aJ">
-                                <rect key="frame" x="144" y="323.5" width="87" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjj-pt-kub">
-                                <rect key="frame" x="167" y="497" width="40" height="36"/>
+                                <rect key="frame" x="189" y="497" width="40" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="按钮">
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,10 +28,27 @@
                                     <action selector="BT1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FTZ-Pz-KL7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Swift!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mq-6D-2aJ">
+                                <rect key="frame" x="144" y="323" width="87" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="h8S-x7-dTM">
+                                <rect key="frame" x="7" y="20" width="360" height="338"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="t-shirt-3" translatesAutoresizingMaskIntoConstraints="NO" id="GqN-LV-zyu">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="338"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="t-shirt-3" translatesAutoresizingMaskIntoConstraints="NO" id="d36-NH-cBK">
+                                        <rect key="frame" x="180" y="0.0" width="180" height="338"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fjj-pt-kub" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ngr-NM-k5c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fjj-pt-kub" secondAttribute="trailing" constant="130" id="EjD-pc-RFE"/>
                             <constraint firstItem="0mq-6D-2aJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S4J-7M-db4"/>
                             <constraint firstItem="0mq-6D-2aJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VHX-sQ-Kg1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fjj-pt-kub" secondAttribute="bottom" constant="134" id="cEI-Jh-FX5"/>
@@ -52,4 +64,7 @@
             <point key="canvasLocation" x="86.5" y="246.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="t-shirt-3" width="180" height="338"/>
+    </resources>
 </document>
